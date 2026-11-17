@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Services | Readers' Haven Public Library</title>
+  <meta name="description" content="Discover our modern civic library services: 24/7 online catalogue, digital e-book databases, soundproof study room bookings, printing facilities, and gigabit Wi-Fi.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="svc-page">
+
+  <!-- ========================================================================
+       SHARED HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="svc-site-header">
+    <div class="svc-container svc-header-container">
+      <a href="index.html" class="svc-brand-logo" aria-label="Readers' Haven Public Library Home">
+        <svg class="svc-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          <path d="M9 7h6"></path>
+          <path d="M9 11h6"></path>
+          <path d="M9 15h4"></path>
+        </svg>
+        <div class="svc-brand-text">
+          <span class="svc-brand-name">Readers' Haven</span>
+          <span class="svc-brand-tagline">Public Library</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Responsive Navigation Hamburger Toggle -->
+      <input type="checkbox" id="svc-nav-toggle" class="svc-nav-toggle" aria-label="Toggle navigation menu">
+      <label for="svc-nav-toggle" class="svc-nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="svc-nav-menu" aria-label="Primary Navigation">
+        <ul class="svc-nav-list">
+          <li><a href="index.html" class="svc-nav-link">Home</a></li>
+          <li><a href="collections.html" class="svc-nav-link">Collections</a></li>
+          <li><a href="membership.html" class="svc-nav-link">Membership</a></li>
+          <li><a href="services.html" class="svc-nav-link svc-active" aria-current="page">Services</a></li>
+          <li><a href="contact.html" class="svc-nav-link">Contact</a></li>
+          <li><a href="events.html" class="svc-nav-link">Events</a></li>
+        </ul>
+        <a href="membership.html" class="svc-btn svc-btn-header">Join the Library</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main>
+    <!-- PAGE HERO -->
+    <section class="svc-page-hero" aria-labelledby="svc-services-hero-title">
+      <div class="svc-container">
+        <span class="svc-page-hero-tag">Patron Amenities</span>
+        <h1 id="svc-services-hero-title" class="svc-page-hero-title">Our Library Services</h1>
+        <p class="svc-page-hero-desc">
+          Readers' Haven integrates state-of-the-art technological amenities with comfortable study environments and expert research guidance to support every visitor's intellectual journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- 1. REQUIRED SERVICES LIST -->
+    <section class="svc-section" aria-labelledby="svc-core-services-heading">
+      <div class="svc-container">
+        <div class="svc-section-header">
+          <span class="svc-section-tag">Explore Offerings</span>
+          <h2 id="svc-core-services-heading" class="svc-section-title">Core Library Facilities</h2>
+          <p class="svc-section-description">
+            Available to all enrolled members and visiting researchers across our physical campus and digital network.
+          </p>
+        </div>
+
+        <div class="svc-services-container">
+          <!-- Service 1: Online Book Catalogue -->
+          <article class="svc-service-card">
+            <div class="svc-service-media-wrap">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80" alt="Library computer terminal displaying online catalogue database" class="svc-service-image">
+              <span class="svc-service-media-badge">Digital Catalogue</span>
+            </div>
+            <div class="svc-service-body">
+              <span class="svc-service-category-tag">Search & Stacks Navigation</span>
+              <h3 class="svc-service-title">Online Book Catalogue</h3>
+              <p class="svc-service-lead">
+                Search our comprehensive collection of over 150,000 physical volumes, view real-time shelf status, track newly acquired releases, and place reservations with your member card.
+              </p>
+              
+              <div class="svc-service-details-box">
+                <div>
+                  <span class="svc-detail-block-title">How It Works</span>
+                  <p class="svc-detail-block-text">Search by title, author, ISBN, or subject keyword. Log in with your library barcode to place holds or check your loan dates.</p>
+                </div>
+                <div>
+                  <span class="svc-detail-block-title">Availability & Timings</span>
+                  <p class="svc-detail-block-text">Available 24 hours a day, 7 days a week via web portal and in-library touchscreen terminals.</p>
+                </div>
+              </div>
+
+              <div>
+                <a href="collections.html" class="svc-btn svc-btn-secondary">Browse Collections Online</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2: E-books & Digital Resources -->
+          <article class="svc-service-card svc-reverse">
+            <div class="svc-service-body">
+              <span class="svc-service-category-tag">Remote Media Portal</span>
+              <h3 class="svc-service-title">E-books and Digital Resources</h3>
+              <p class="svc-service-lead">
+                Borrow popular electronic books, audiobooks, international daily newspapers, and peer-reviewed scholarly journals directly to your e-reader, tablet, or smartphone.
+              </p>
+              
+              <div class="svc-service-details-box">
+                <div>
+                  <span class="svc-detail-block-title">How It Works</span>
+                  <p class="svc-detail-block-text">Authenticate using your library membership credentials on Libby, JSTOR, or PressReader to stream or download up to 6 digital titles simultaneously.</p>
+                </div>
+                <div>
+                  <span class="svc-detail-block-title">Availability & Timings</span>
+                  <p class="svc-detail-block-text">Instant 24/7 global cloud access for all active registered members.</p>
+                </div>
+              </div>
+
+              <div>
+                <a href="membership.html" class="svc-btn svc-btn-primary">Activate Digital Account</a>
+              </div>
+            </div>
+            <div class="svc-service-media-wrap">
+              <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Tablet displaying e-book pages alongside a stack of library research books" class="svc-service-image">
+              <span class="svc-service-media-badge">E-Library Access</span>
+            </div>
+          </article>
+
+          <!-- Service 3: Study Room Booking -->
+          <article class="svc-service-card">
+            <div class="svc-service-media-wrap">
+              <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=800&q=80" alt="Bright and quiet library study room with large wooden tables and natural sunlight" class="svc-service-image">
+              <span class="svc-service-media-badge">Sanctuary Spaces</span>
+            </div>
+            <div class="svc-service-body">
+              <span class="svc-service-category-tag">Quiet & Collaborative Zones</span>
+              <h3 class="svc-service-title">Study Room Booking</h3>
+              <p class="svc-service-lead">
+                Reserve sound-insulated individual study carrels or collaborative group seminar rooms equipped with whiteboards, ergonomic seating, and AV presentation displays.
+              </p>
+              
+              <div class="svc-service-details-box">
+                <div>
+                  <span class="svc-detail-block-title">How It Works</span>
+                  <p class="svc-detail-block-text">Book reservations up to 7 days in advance at the reception desk or front service kiosks in 2-hour slots (renewable based on demand).</p>
+                </div>
+                <div>
+                  <span class="svc-detail-block-title">Available Timings</span>
+                  <p class="svc-detail-block-text">Monday – Friday: 8:30 AM – 8:30 PM | Weekends: 9:30 AM – 6:30 PM</p>
+                </div>
+              </div>
+
+              <div>
+                <a href="contact.html" class="svc-btn svc-btn-secondary">Inquire About Room Booking</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4: Printing and Scanning -->
+          <article class="svc-service-card svc-reverse">
+            <div class="svc-service-body">
+              <span class="svc-service-category-tag">Document Center</span>
+              <h3 class="svc-service-title">Printing and Scanning</h3>
+              <p class="svc-service-lead">
+                High-speed laser printing, full-color document reproduction, high-resolution document scanners, and archival microfilm digitizers available on the mezzanine floor.
+              </p>
+              
+              <div class="svc-service-details-box">
+                <div>
+                  <span class="svc-detail-block-title">How It Works</span>
+                  <p class="svc-detail-block-text">Send documents from library workstations or mobile devices via our print release stations. Document scanning to email/USB is completely free.</p>
+                </div>
+                <div>
+                  <span class="svc-detail-block-title">Tariffs & Timings</span>
+                  <p class="svc-detail-block-text">B&W: PKR 5/page | Color: PKR 25/page | Mon – Sat: 8:30 AM – 8:00 PM</p>
+                </div>
+              </div>
+
+              <div>
+                <a href="contact.html" class="svc-btn svc-btn-secondary">View Print Station Guide</a>
+              </div>
+            </div>
+            <div class="svc-service-media-wrap">
+              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="High speed printing, scanning and documentation station in library" class="svc-service-image">
+              <span class="svc-service-media-badge">Reprographics</span>
+            </div>
+          </article>
+
+          <!-- Service 5: Wi-Fi Access -->
+          <article class="svc-service-card">
+            <div class="svc-service-media-wrap">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Students using laptops and connected devices under seamless library Wi-Fi" class="svc-service-image">
+              <span class="svc-service-media-badge">Connectivity</span>
+            </div>
+            <div class="svc-service-body">
+              <span class="svc-service-category-tag">High-Speed Network</span>
+              <h3 class="svc-service-title">Wi-Fi Access</h3>
+              <p class="svc-service-lead">
+                Blazing-fast, complimentary gigabit wireless internet connectivity available throughout all four floors, the garden courtyard, and reading verandas.
+              </p>
+              
+              <div class="svc-service-details-box">
+                <div>
+                  <span class="svc-detail-block-title">How It Works</span>
+                  <p class="svc-detail-block-text">Select the network <strong>ReadersHaven-Public</strong>, accept our civic fair-use policy, and log in with your membership number or daily visitor guest pass.</p>
+                </div>
+                <div>
+                  <span class="svc-detail-block-title">Availability & Bandwidth</span>
+                  <p class="svc-detail-block-text">Available during all library operating hours with symmetric 1 Gbps high-capacity bandwidth.</p>
+                </div>
+              </div>
+
+              <div>
+                <a href="membership.html" class="svc-btn svc-btn-primary">Get Your Member Pass</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. HOW TO ACCESS SERVICES SECTION -->
+    <section class="svc-section svc-section-bg-cream" aria-labelledby="svc-access-services-title">
+      <div class="svc-container">
+        <div class="svc-section-header">
+          <span class="svc-section-tag">Patron Guidance</span>
+          <h2 id="svc-access-services-title" class="svc-section-title">How to Access Our Services</h2>
+          <p class="svc-section-description">
+            Whether visiting in person or connecting remotely, accessing our resources is streamlined for all community members.
+          </p>
+        </div>
+
+        <div class="svc-access-grid">
+          <div class="svc-access-card">
+            <div class="svc-access-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="svc-access-card-title">1. Check In at Front Desk</h3>
+            <p class="svc-access-card-text">
+              First-time visitors can obtain a daily guest pass or register for full membership by presenting national ID or student identification at our welcome hall.
+            </p>
+          </div>
+
+          <div class="svc-access-card">
+            <div class="svc-access-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="svc-access-card-title">2. Use Self-Service Kiosks</h3>
+            <p class="svc-access-card-text">
+              Interactive touchscreen stations located at the entrance of each floor allow you to locate books, check queue reservations, and book study rooms instantly.
+            </p>
+          </div>
+
+          <div class="svc-access-card">
+            <div class="svc-access-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3 class="svc-access-card-title">3. Ask a Reference Librarian</h3>
+            <p class="svc-access-card-text">
+              Our professional research staff are stationed on each floor to provide research citations, manuscript handling assistance, and technical help.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       SHARED FOOTER
+       ======================================================================== -->
+  <footer class="svc-site-footer">
+    <div class="svc-container">
+      <div class="svc-footer-grid">
+        <div class="svc-footer-brand">
+          <a href="index.html" class="svc-brand-logo" aria-label="Readers' Haven Public Library Home">
+            <svg class="svc-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <path d="M9 7h6"></path>
+              <path d="M9 11h6"></path>
+              <path d="M9 15h4"></path>
+            </svg>
+            <div class="svc-brand-text">
+              <span class="svc-brand-name">Readers' Haven</span>
+              <span class="svc-brand-tagline">Public Library</span>
+            </div>
+          </a>
+          <p class="svc-footer-about">
+            A welcoming civic sanctuary dedicated to democratic access to literature, scholarly exploration, digital literacy, and inclusive community connection.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="svc-footer-heading">Quick Links</h4>
+          <ul class="svc-footer-links">
+            <li><a href="index.html" class="svc-footer-link">Home Page</a></li>
+            <li><a href="collections.html" class="svc-footer-link">Book Collections</a></li>
+            <li><a href="membership.html" class="svc-footer-link">Membership Plans</a></li>
+            <li><a href="services.html" class="svc-footer-link">Library Services</a></li>
+            <li><a href="events.html" class="svc-footer-link">Events & Activities</a></li>
+            <li><a href="contact.html" class="svc-footer-link">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="svc-footer-heading">Visiting Hours</h4>
+          <ul class="svc-footer-links">
+            <li class="svc-footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Mon – Fri: 8:00 AM – 9:00 PM</li>
+            <li class="svc-footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Saturday: 9:00 AM – 7:00 PM</li>
+            <li class="svc-footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Sunday: 10:00 AM – 6:00 PM</li>
+            <li class="svc-footer-link" style="color: var(--svc-muted-gold); font-size: 0.8125rem; margin-top: 0.5rem;">Study halls open 30 mins before general stacks.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="svc-footer-heading">Contact Details</h4>
+          <div class="svc-footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>142 Heritage Boulevard, Cultural District, Lahore 54000</span>
+          </div>
+          <div class="svc-footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+92 (42) 3587-4190</span>
+          </div>
+          <div class="svc-footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>info@readershavenlibrary.org</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-footer-bottom">
+        <p>&copy; 2026 Readers' Haven Public Library. All rights reserved. Dedicated to knowledge, community, and literacy.</p>
+        <div class="svc-footer-legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Borrowing</a>
+          <a href="contact.html">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
