@@ -1119,3 +1119,754 @@ p {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   READERS' HAVEN PUBLIC LIBRARY - SERVICES PAGE STYLESHEET
+   styles/services.css
+
+   NAMESPACE: every class, id and CSS variable in this file starts with
+   "svc-" / "--svc-". Element (tag) selectors cannot be prefixed, so they are
+   scoped under  :where(.svc-page)  -- add class="svc-page" to the <body>
+   of the services page. :where() keeps specificity at zero, so the cascade
+   behaves exactly like the original unscoped rules.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Variables & Design Tokens
+   -------------------------------------------------------------------------- */
+.svc-page {
+  --svc-primary-navy: #183153;
+  --svc-secondary-navy: #29476B;
+  --svc-warm-cream: #F8F5EF;
+  --svc-white: #FFFFFF;
+  --svc-muted-gold: #C49A45;
+  --svc-muted-gold-hover: #b08736;
+  --svc-dark-text: #263238;
+  --svc-secondary-text: #687386;
+  --svc-light-bg: #F1F4F7;
+  --svc-card-border: #E5E9F0;
+
+  --svc-font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --svc-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --svc-shadow-sm: 0 2px 8px rgba(24, 49, 83, 0.05);
+  --svc-shadow-md: 0 8px 24px rgba(24, 49, 83, 0.08);
+  --svc-shadow-lg: 0 16px 36px rgba(24, 49, 83, 0.12);
+
+  --svc-radius-sm: 6px;
+  --svc-radius-md: 10px;
+  --svc-radius-lg: 16px;
+  --svc-radius-full: 9999px;
+
+  --svc-transition: all 0.25s ease-in-out;
+  --svc-container-width: 1200px;
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset & Global Base (scoped to .svc-page)
+   -------------------------------------------------------------------------- */
+:where(.svc-page) *,
+:where(.svc-page) *::before,
+:where(.svc-page) *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html can't be prefixed; only applies when a .svc-page exists */
+html:has(.svc-page) {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.svc-page {
+  font-family: var(--svc-font-sans);
+  color: var(--svc-dark-text);
+  background-color: var(--svc-white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.svc-page) img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:where(.svc-page) a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--svc-transition);
+}
+
+:where(.svc-page) ul {
+  list-style: none;
+}
+
+:where(.svc-page) h1,
+:where(.svc-page) h2,
+:where(.svc-page) h3,
+:where(.svc-page) h4,
+:where(.svc-page) h5 {
+  font-family: var(--svc-font-serif);
+  color: var(--svc-primary-navy);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+:where(.svc-page) p {
+  color: var(--svc-secondary-text);
+}
+
+.svc-container {
+  width: 100%;
+  max-width: var(--svc-container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.svc-section {
+  padding: 5rem 0;
+}
+
+.svc-section-bg-light {
+  background-color: var(--svc-light-bg);
+}
+
+.svc-section-bg-cream {
+  background-color: var(--svc-warm-cream);
+}
+
+.svc-section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.svc-section-tag {
+  display: inline-block;
+  font-family: var(--svc-font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--svc-muted-gold);
+  background-color: rgba(196, 154, 69, 0.12);
+  padding: 0.35rem 1rem;
+  border-radius: var(--svc-radius-full);
+  margin-bottom: 0.875rem;
+}
+
+.svc-section-title {
+  font-size: 2.35rem;
+  margin-bottom: 1rem;
+}
+
+.svc-section-description {
+  font-size: 1.0625rem;
+  color: var(--svc-secondary-text);
+}
+
+/* --------------------------------------------------------------------------
+   3. Buttons
+   -------------------------------------------------------------------------- */
+.svc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--svc-font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--svc-radius-sm);
+  cursor: pointer;
+  transition: var(--svc-transition);
+  border: 2px solid transparent;
+  gap: 0.5rem;
+}
+
+.svc-btn-primary {
+  background-color: var(--svc-muted-gold);
+  color: var(--svc-white);
+  border-color: var(--svc-muted-gold);
+}
+
+.svc-btn-primary:hover {
+  background-color: var(--svc-muted-gold-hover);
+  border-color: var(--svc-muted-gold-hover);
+  transform: translateY(-2px);
+}
+
+.svc-btn-secondary {
+  background-color: transparent;
+  color: var(--svc-primary-navy);
+  border-color: var(--svc-primary-navy);
+}
+
+.svc-btn-secondary:hover {
+  background-color: var(--svc-primary-navy);
+  color: var(--svc-white);
+}
+
+.svc-btn-header {
+  background-color: var(--svc-muted-gold);
+  color: var(--svc-white);
+  padding: 0.6rem 1.35rem;
+  font-size: 0.875rem;
+  border-radius: var(--svc-radius-sm);
+  font-weight: 600;
+}
+
+.svc-btn-header:hover {
+  background-color: var(--svc-muted-gold-hover);
+  color: var(--svc-white);
+}
+
+/* --------------------------------------------------------------------------
+   4. Shared Header & Navigation
+   -------------------------------------------------------------------------- */
+.svc-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--svc-white);
+  box-shadow: var(--svc-shadow-sm);
+  border-bottom: 1px solid rgba(24, 49, 83, 0.08);
+}
+
+.svc-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.svc-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.svc-brand-icon {
+  width: 38px;
+  height: 38px;
+  color: var(--svc-muted-gold);
+  stroke-width: 1.8;
+}
+
+.svc-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.svc-brand-name {
+  font-family: var(--svc-font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--svc-primary-navy);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.svc-brand-tagline {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--svc-muted-gold);
+  font-weight: 600;
+}
+
+.svc-nav-toggle {
+  display: none;
+}
+
+.svc-nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.svc-nav-toggle-label span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--svc-primary-navy);
+  border-radius: 2px;
+  transition: var(--svc-transition);
+}
+
+.svc-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.svc-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.svc-nav-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--svc-primary-navy);
+  padding: 0.4rem 0.2rem;
+  position: relative;
+}
+
+.svc-nav-link:hover {
+  color: var(--svc-muted-gold);
+}
+
+.svc-nav-link.svc-active {
+  color: var(--svc-muted-gold);
+  font-weight: 600;
+}
+
+.svc-nav-link.svc-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--svc-muted-gold);
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   5. Services Hero
+   -------------------------------------------------------------------------- */
+.svc-page-hero {
+  background: linear-gradient(135deg, #183153 0%, #29476B 100%);
+  color: var(--svc-white);
+  padding: 4.5rem 0 3.5rem 0;
+  text-align: center;
+}
+
+.svc-page-hero-tag {
+  color: var(--svc-muted-gold);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.svc-page-hero-title {
+  color: var(--svc-white);
+  font-size: 2.85rem;
+  margin-bottom: 1rem;
+}
+
+.svc-page-hero-desc {
+  max-width: 720px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   6. Required Services List & Cards
+   -------------------------------------------------------------------------- */
+.svc-services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.svc-service-card {
+  background-color: var(--svc-white);
+  border: 1px solid var(--svc-card-border);
+  border-radius: var(--svc-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--svc-shadow-sm);
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  transition: var(--svc-transition);
+}
+
+.svc-service-card:hover {
+  box-shadow: var(--svc-shadow-md);
+  border-color: var(--svc-muted-gold);
+}
+
+.svc-service-card.svc-reverse {
+  grid-template-columns: 1fr 420px;
+}
+
+.svc-service-media-wrap {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--svc-primary-navy);
+  min-height: 320px;
+}
+
+.svc-service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.svc-service-card:hover .svc-service-image {
+  transform: scale(1.04);
+}
+
+.svc-service-media-badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background-color: rgba(24, 49, 83, 0.88);
+  color: var(--svc-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--svc-radius-full);
+  backdrop-filter: blur(4px);
+}
+
+.svc-service-body {
+  padding: 2.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.svc-service-category-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--svc-muted-gold);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.svc-service-title {
+  font-size: 2rem;
+  margin-bottom: 0.85rem;
+  color: var(--svc-primary-navy);
+}
+
+.svc-service-lead {
+  font-size: 1.05rem;
+  color: var(--svc-secondary-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.65;
+}
+
+.svc-service-details-box {
+  background-color: var(--svc-light-bg);
+  border-radius: var(--svc-radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.svc-detail-block-title {
+  font-size: 0.78125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--svc-primary-navy);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.svc-detail-block-text {
+  font-size: 0.9375rem;
+  color: var(--svc-dark-text);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   7. How to Access Services Section
+   -------------------------------------------------------------------------- */
+.svc-access-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.svc-access-card {
+  background-color: var(--svc-white);
+  border: 1px solid var(--svc-card-border);
+  border-radius: var(--svc-radius-md);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--svc-shadow-sm);
+  text-align: center;
+  transition: var(--svc-transition);
+}
+
+.svc-access-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--svc-muted-gold);
+  box-shadow: var(--svc-shadow-md);
+}
+
+.svc-access-icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--svc-warm-cream);
+  color: var(--svc-muted-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem auto;
+}
+
+.svc-access-icon-box svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--svc-muted-gold);
+}
+
+.svc-access-card-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.svc-access-card-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   8. Shared Footer
+   -------------------------------------------------------------------------- */
+.svc-site-footer {
+  background-color: #112238;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 5rem 0 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.svc-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.svc-footer-brand .svc-brand-name {
+  color: var(--svc-white);
+  font-size: 1.45rem;
+}
+
+.svc-footer-brand .svc-brand-icon {
+  color: var(--svc-muted-gold);
+}
+
+.svc-footer-about {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.svc-footer-heading {
+  font-family: var(--svc-font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--svc-white);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.35rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.svc-footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--svc-muted-gold);
+}
+
+.svc-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.svc-footer-link {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--svc-transition);
+}
+
+.svc-footer-link:hover {
+  color: var(--svc-muted-gold);
+  transform: translateX(3px);
+}
+
+.svc-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  margin-bottom: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.svc-footer-contact-item svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--svc-muted-gold);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.svc-footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.svc-footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.svc-footer-legal-links a:hover {
+  color: var(--svc-muted-gold);
+}
+
+/* --------------------------------------------------------------------------
+   9. Responsive Media Queries
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .svc-service-card,
+  .svc-service-card.svc-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .svc-service-media-wrap {
+    height: 280px;
+    min-height: auto;
+  }
+
+  .svc-access-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .svc-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .svc-page-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .svc-section-title {
+    font-size: 1.95rem;
+  }
+
+  .svc-service-title {
+    font-size: 1.7rem;
+  }
+
+  .svc-service-body {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .svc-service-details-box {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .svc-nav-toggle-label {
+    display: flex;
+  }
+
+  .svc-nav-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--svc-white);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem;
+    box-shadow: var(--svc-shadow-lg);
+    border-top: 1px solid var(--svc-card-border);
+    display: none;
+  }
+
+  .svc-nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .svc-nav-link {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--svc-card-border);
+  }
+
+  .svc-nav-link.svc-active::after {
+    display: none;
+  }
+
+  .svc-btn-header {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .svc-nav-toggle:checked ~ .svc-nav-menu {
+    display: flex;
+  }
+
+  .svc-nav-toggle:checked ~ .svc-nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .svc-nav-toggle:checked ~ .svc-nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .svc-nav-toggle:checked ~ .svc-nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+  }
+
+  .svc-footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .svc-footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
