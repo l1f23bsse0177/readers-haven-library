@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readers' Haven Public Library | Discover a World of Knowledge</title>
+  <meta name="description" content="Readers' Haven Public Library is a vibrant community sanctuary dedicated to literacy, lifelong learning, rich book collections, and inclusive civic cultural events.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SHARED HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Readers' Haven Public Library Home">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          <path d="M9 7h6"></path>
+          <path d="M9 11h6"></path>
+          <path d="M9 15h4"></path>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Readers' Haven</span>
+          <span class="brand-tagline">Public Library</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Responsive Navigation Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="collections.html" class="nav-link">Collections</a></li>
+          <li><a href="membership.html" class="nav-link">Membership</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+        </ul>
+        <a href="membership.html" class="btn btn-header">Join the Library</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="hero-badge-dot" aria-hidden="true"></span>
+              <span>Welcoming Curious Minds Since 1984</span>
+            </div>
+            <h1 id="hero-heading" class="hero-heading">Discover a World of Knowledge.</h1>
+            <p class="hero-description">
+              Welcome to Readers' Haven Public Library — your sanctuary for literary exploration, quiet contemplation, collaborative study, and lifelong personal growth. Explore over 150,000 volumes and dynamic digital resources.
+            </p>
+            <div class="hero-actions">
+              <a href="collections.html" class="btn btn-primary">
+                Explore Collections
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="membership.html" class="btn btn-secondary">Become a Member</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">150K+</span>
+                <span class="stat-label">Volumes Catalogued</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Monthly Events</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Free Public Access</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80" alt="Majestic interior of Readers' Haven Public Library featuring grand wood bookshelves, arched reading desks, and warm atmospheric lighting" class="hero-image">
+            </div>
+            <div class="hero-floating-card">
+              <div class="floating-icon" aria-hidden="true">★</div>
+              <div>
+                <h4 class="floating-title">Open to All Citizens</h4>
+                <p class="floating-text">Quiet reading halls, free Wi-Fi, and expert research librarians.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT & MISSION SECTION -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="section-tag">About Readers' Haven</span>
+            <h2 id="about-heading" class="about-intro-title">Empowering Our Community Through Literacy & Shared Learning</h2>
+            <p class="about-intro-text">
+              For over four decades, Readers' Haven Public Library has served as the intellectual heartbeat of our city. We believe democratic access to diverse books, trustworthy archives, and welcoming public spaces transforms lives and builds empathetic, informed communities.
+            </p>
+            <p class="about-intro-text">
+              Whether you are an aspiring novelist, a university researcher, a young child discovering picture books, or an everyday reader seeking tranquility, our library doors are open to guide your journey.
+            </p>
+          </div>
+          <div>
+            <blockquote class="about-quote">
+              "A library is not just a depository of books; it is a living laboratory of human empathy, civil discourse, and endless wonder."
+              <footer style="margin-top: 0.75rem; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600; color: var(--muted-gold); font-style: normal;">— Chief Librarian's Welcome Address</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- 4 Pillars -->
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <h3 class="pillar-title">Commitment to Education</h3>
+            <p class="pillar-description">Comprehensive tutoring support, academic databases, literacy drives, and scholarly research assistance for students of all ages.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="pillar-title">Universal Access</h3>
+            <p class="pillar-description">Unrestricted access to world-class books, high-speed digital archives, journals, and technology without economic barriers.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="pillar-title">Community Learning</h3>
+            <p class="pillar-description">Collaborative study rooms, civil debate forums, creative makerspaces, and intergenerational story circles that bring neighbors together.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3 class="pillar-title">Reading Culture</h3>
+            <p class="pillar-description">Inspiring a lifelong love of the written word through annual book challenges, reading circles, and visits from beloved regional authors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURED COLLECTIONS -->
+    <section class="section section-bg-light" aria-labelledby="collections-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Curated Repositories</span>
+          <h2 id="collections-heading" class="section-title">Featured Book Collections</h2>
+          <p class="section-description">
+            Explore our meticulously organized shelves spanning imaginative storytelling, empirical discoveries, foundational references, and cherished children's lore.
+          </p>
+        </div>
+
+        <div class="collections-grid">
+          <!-- Category 1: Fiction -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Stack of classic fiction novels with decorative bookmarks" class="category-image">
+              <span class="category-badge-overlay">38,000+ Titles</span>
+            </div>
+            <div class="category-body">
+              <h3 class="category-title">Fiction</h3>
+              <p class="category-desc">
+                From historical epics and thrilling mysteries to poetic magical realism and international contemporary bestsellers.
+              </p>
+              <a href="collections.html#fiction" class="category-link">
+                Explore Fiction
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 2: Non-Fiction -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Neatly stacked non-fiction books focusing on science, history, and memoirs" class="category-image">
+              <span class="category-badge-overlay">45,000+ Titles</span>
+            </div>
+            <div class="category-body">
+              <h3 class="category-title">Non-Fiction</h3>
+              <p class="category-desc">
+                Deepen your understanding with authoritative works in history, cognitive science, political thought, memoirs, and economics.
+              </p>
+              <a href="collections.html#non-fiction" class="category-link">
+                Explore Non-Fiction
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 3: Children's Corner -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=800&q=80" alt="Colorful children's illustrated storybooks and reading play rugs" class="category-image">
+              <span class="category-badge-overlay">22,000+ Titles</span>
+            </div>
+            <div class="category-body">
+              <h3 class="category-title">Children's Corner</h3>
+              <p class="category-desc">
+                Igniting young imaginations with vibrant picture books, interactive early phonics readers, folklore, and fantasy series.
+              </p>
+              <a href="collections.html#children" class="category-link">
+                Explore Children's
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 4: Reference -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80" alt="Comprehensive reference encyclopedias, historical atlases, and academic journals" class="category-image">
+              <span class="category-badge-overlay">18,000+ Titles</span>
+            </div>
+            <div class="category-body">
+              <h3 class="category-title">Reference</h3>
+              <p class="category-desc">
+                Encyclopedic sets, regional geographical atlases, peer-reviewed academic journals, and historical municipal archives.
+              </p>
+              <a href="collections.html#reference" class="category-link">
+                Explore Reference
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE US -->
+    <section class="section" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Library Advantages</span>
+          <h2 id="benefits-heading" class="section-title">Why Readers Choose Our Haven</h2>
+          <p class="section-description">
+            We provide a sanctuary where modern technology seamlessly blends with classic library tranquility to support your personal, academic, and cultural aspirations.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3 class="benefit-title">Extensive Book Collection</h3>
+            <p class="benefit-text">Carefully curated catalog of over 150,000 volumes across 600 subjects, continually updated with new releases and rare acquisitions.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+            </div>
+            <h3 class="benefit-title">Comfortable Study Spaces</h3>
+            <p class="benefit-text">Sound-buffered silent study carrels, sunlit reading lounges, ergonomic chairs, and reservable team collaboration suites.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="benefit-title">Digital Learning Resources</h3>
+            <p class="benefit-text">24/7 off-site access to premium academic databases, 50,000+ e-books, audiobooks, and historical newspaper digital archives.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="benefit-title">Community Activities</h3>
+            <p class="benefit-text">Engaging weekly programs including author talks, book clubs, creative writing workshops, and children's storytime sessions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. LIBRARY INFORMATION SECTION -->
+    <section class="section section-bg-cream" aria-labelledby="info-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Plan Your Visit</span>
+          <h2 id="info-heading" class="section-title">Library Hours & Information</h2>
+          <p class="section-description">
+            Readers' Haven is located in the central cultural quarter with convenient transit links, bicycle racks, and fully wheelchair-accessible reading halls.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <!-- Hours Card -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <div class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <h3 class="info-card-title">Opening Hours</h3>
+            </div>
+            <div class="info-list">
+              <div class="info-list-item">
+                <span class="info-label">Monday – Friday</span>
+                <span class="info-value">8:00 AM – 9:00 PM</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Saturday</span>
+                <span class="info-value">9:00 AM – 7:00 PM</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Sunday</span>
+                <span class="info-value">10:00 AM – 6:00 PM</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Public Holidays</span>
+                <span class="info-value">12:00 PM – 5:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <div class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <h3 class="info-card-title">Our Location</h3>
+            </div>
+            <address>
+              <strong>Readers' Haven Public Library</strong><br>
+              142 Heritage Boulevard, Cultural District<br>
+              Lahore 54000, Punjab, Pakistan
+            </address>
+            <div class="info-list">
+              <div class="info-list-item">
+                <span class="info-label">Nearest Transit</span>
+                <span class="info-value">Heritage Metro Station (Exit 2)</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Parking</span>
+                <span class="info-value">Complimentary underground lot</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Card -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <div class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <h3 class="info-card-title">Get in Touch</h3>
+            </div>
+            <div class="info-list">
+              <div class="info-list-item">
+                <span class="info-label">General Desk</span>
+                <span class="info-value">+92 (42) 3587-4190</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Research Inquiries</span>
+                <span class="info-value">+92 (42) 3587-4191</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">info@readershavenlibrary.org</span>
+              </div>
+              <div class="info-list-item">
+                <span class="info-label">Membership Help</span>
+                <span class="info-value">members@readershavenlibrary.org</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CALL TO ACTION -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container cta-container">
+        <span class="cta-tag">Become Part of Our Story</span>
+        <h2 id="cta-heading" class="cta-title">Your Next Chapter Begins Here.</h2>
+        <p class="cta-description">
+          Join thousands of passionate readers, students, educators, and lifelong learners. Obtain your library card today for free borrowing privileges, digital access, and community perks.
+        </p>
+        <div class="cta-actions">
+          <a href="membership.html" class="btn btn-primary">
+            Join the Library Today
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="contact.html" class="btn btn-outline-white">Speak With a Librarian</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       SHARED FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Readers' Haven Public Library Home">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <path d="M9 7h6"></path>
+              <path d="M9 11h6"></path>
+              <path d="M9 15h4"></path>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name">Readers' Haven</span>
+              <span class="brand-tagline">Public Library</span>
+            </div>
+          </a>
+          <p class="footer-about">
+            A welcoming civic sanctuary dedicated to democratic access to literature, scholarly exploration, digital literacy, and inclusive community connection.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Page</a></li>
+            <li><a href="collections.html" class="footer-link">Book Collections</a></li>
+            <li><a href="membership.html" class="footer-link">Membership Plans</a></li>
+            <li><a href="services.html" class="footer-link">Library Services</a></li>
+            <li><a href="events.html" class="footer-link">Events & Activities</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours -->
+        <div>
+          <h4 class="footer-heading">Visiting Hours</h4>
+          <ul class="footer-links">
+            <li class="footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Mon – Fri: 8:00 AM – 9:00 PM</li>
+            <li class="footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Saturday: 9:00 AM – 7:00 PM</li>
+            <li class="footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Sunday: 10:00 AM – 6:00 PM</li>
+            <li class="footer-link" style="color: var(--muted-gold); font-size: 0.8125rem; margin-top: 0.5rem;">Study halls open 30 mins before general stacks.</li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div>
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>142 Heritage Boulevard, Cultural District, Lahore 54000</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+92 (42) 3587-4190</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>info@readershavenlibrary.org</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Readers' Haven Public Library. All rights reserved. Dedicated to knowledge, community, and literacy.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Borrowing</a>
+          <a href="contact.html">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
