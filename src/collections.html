@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Our Book Collections | Readers' Haven Public Library</title>
+  <meta name="description"
+    content="Browse over 150,000 catalogued volumes across Fiction, Non-Fiction, Children's Corner, and Reference archives at Readers' Haven Public Library.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       SHARED HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Readers' Haven Public Library Home">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          <path d="M9 7h6"></path>
+          <path d="M9 11h6"></path>
+          <path d="M9 15h4"></path>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Readers' Haven</span>
+          <span class="brand-tagline">Public Library</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Responsive Navigation Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="collections.html" class="nav-link active" aria-current="page">Collections</a></li>
+          <li><a href="membership.html" class="nav-link">Membership</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+        </ul>
+        <a href="membership.html" class="btn btn-header">Join the Library</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main>
+    <!-- PAGE HERO -->
+    <section class="collection-page-hero" aria-labelledby="collection-page-title">
+      <div class="container">
+        <span class="collection-page-hero-tag">Library Catalogue</span>
+        <h1 id="collection-page-title" class="collection-page-hero-title">Explore Our Collections</h1>
+        <p class="collection-page-hero-desc">
+          From groundbreaking historical narratives and world-renowned literary classics to imaginative children's
+          picture books and scholarly reference treatises, our curated stacks welcome your curious mind.
+        </p>
+
+        <!-- Category Jump Bar -->
+        <nav class="collection-category-nav-bar" aria-label="Jump to collection category">
+          <a href="#collection-fiction" class="collection-cat-pill">Fiction Collection</a>
+          <a href="#collection-non-fiction" class="collection-cat-pill">Non-Fiction Works</a>
+          <a href="#collection-children" class="collection-cat-pill">Children's Corner</a>
+          <a href="#collection-reference" class="collection-cat-pill">Reference Archives</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 1. FICTION SECTION -->
+    <section id="collection-fiction" class="collection-category-section" aria-labelledby="collection-fiction-title">
+      <div class="container">
+        <div class="collection-category-header-wrap">
+          <div class="collection-category-header-left">
+            <span class="collection-category-super-tag">Category 01</span>
+            <h2 id="collection-fiction-title" class="collection-category-main-title">Fiction</h2>
+            <p class="collection-category-lead-text">
+              Immerse yourself in timeless classic novels, gripping psychological mysteries, lyrical epics, and
+              contemporary global literature.
+            </p>
+          </div>
+          <span class="collection-category-count-badge">38,000+ Titles on Stacks</span>
+        </div>
+
+        <div class="collection-books-grid">
+          <!-- Book 1 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of The Shadow of the Wind" class="collection-book-cover">
+              <span class="collection-book-badge-category">Historical Mystery</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">The Shadow of the Wind</h3>
+              <p class="collection-book-author">by Carlos Ruiz Zafón</p>
+              <div class="collection-book-meta">
+                <span>Call No: FIC-ZAF-2001</span>
+                <span>496 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                In post-war Barcelona, a young boy discovers a mysterious tome in the Cemetery of Forgotten Books,
+                unraveling an enigmatic author's tragic past and sinister intrigue.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 2, Shelf 4B</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 2 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of To Kill a Mockingbird" class="collection-book-cover">
+              <span class="collection-book-badge-category">Classic Literature</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">To Kill a Mockingbird</h3>
+              <p class="collection-book-author">by Harper Lee</p>
+              <div class="collection-book-meta">
+                <span>Call No: FIC-LEE-1960</span>
+                <span>336 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                A monumental American classic exploring moral courage, empathy, and racial injustice in the Deep South
+                through the piercingly observant eyes of young Scout Finch.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 2, Shelf 2A</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 3 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of The Midnight Library" class="collection-book-cover">
+              <span class="collection-book-badge-category">Speculative Fiction</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">The Midnight Library</h3>
+              <p class="collection-book-author">by Matt Haig</p>
+              <div class="collection-book-meta">
+                <span>Call No: FIC-HAI-2020</span>
+                <span>304 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                Between life and death exists a magical library where every volume offers a chance to live out unchosen
+                paths, exploring regrets, forgiveness, and the true meaning of existence.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 2, Shelf 7D</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. NON-FICTION SECTION -->
+    <section id="collection-non-fiction" class="collection-category-section section-bg-light" aria-labelledby="collection-nonfiction-title">
+      <div class="container">
+        <div class="collection-category-header-wrap">
+          <div class="collection-category-header-left">
+            <span class="collection-category-super-tag">Category 02</span>
+            <h2 id="collection-nonfiction-title" class="collection-category-main-title">Non-Fiction</h2>
+            <p class="collection-category-lead-text">
+              Rigorous investigations into human origins, behavioral economics, astrophysics, philosophy, and memoirs
+              that shape our understanding of reality.
+            </p>
+          </div>
+          <span class="collection-category-count-badge">45,000+ Titles on Stacks</span>
+        </div>
+
+        <div class="collection-books-grid">
+          <!-- Book 1 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of Sapiens" class="collection-book-cover">
+              <span class="collection-book-badge-category">Anthropology & History</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Sapiens: A Brief History of Humankind</h3>
+              <p class="collection-book-author">by Yuval Noah Harari</p>
+              <div class="collection-book-meta">
+                <span>Call No: NF-HAR-2014</span>
+                <span>443 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                A sweeping survey of Homo sapiens from primitive stone-age foragers to masters of the globe, detailing
+                the Cognitive, Agricultural, and Scientific Revolutions.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 3, Shelf 11B</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 2 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of Thinking Fast and Slow" class="collection-book-cover">
+              <span class="collection-book-badge-category">Cognitive Psychology</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Thinking, Fast and Slow</h3>
+              <p class="collection-book-author">by Daniel Kahneman</p>
+              <div class="collection-book-meta">
+                <span>Call No: NF-KAH-2011</span>
+                <span>499 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                Nobel laureate Daniel Kahneman takes us on an intellectual tour of the dual cognitive systems driving
+                our judgments: fast, intuitive thinking and slow, deliberate deliberation.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 3, Shelf 14A</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 3 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of Cosmos by Carl Sagan" class="collection-book-cover">
+              <span class="collection-book-badge-category">Science & Astronomy</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Cosmos</h3>
+              <p class="collection-book-author">by Carl Sagan</p>
+              <div class="collection-book-meta">
+                <span>Call No: NF-SAG-1980</span>
+                <span>365 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                A poetic, awe-inspiring journey through fifteen billion years of cosmic evolution, tracing how science
+                and civilization intertwine in humanity's quest to know our universe.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 3, Shelf 18C</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CHILDREN'S CORNER SECTION -->
+    <section id="collection-children" class="collection-category-section" aria-labelledby="collection-children-title">
+      <div class="container">
+        <div class="collection-category-header-wrap">
+          <div class="collection-category-header-left">
+            <span class="collection-category-super-tag">Category 03</span>
+            <h2 id="collection-children-title" class="collection-category-main-title">Children's Corner</h2>
+            <p class="collection-category-lead-text">
+              Ignite a lifelong love for reading with richly illustrated storybooks, touching animal allegories, and
+              whimsical fairy tales designed for young dreamers.
+            </p>
+          </div>
+          <span class="collection-category-count-badge">22,000+ Titles on Stacks</span>
+        </div>
+
+        <div class="collection-books-grid">
+          <!-- Book 1 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of Where the Wild Things Are" class="collection-book-cover">
+              <span class="collection-book-badge-category">Illustrated Classic</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Where the Wild Things Are</h3>
+              <p class="collection-book-author">by Maurice Sendak</p>
+              <div class="collection-book-meta">
+                <span>Call No: JUV-SEN-1963</span>
+                <span>48 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                When mischievous young Max is sent to bed without supper, his bedroom transforms into an enchanted
+                forest where he sails to the land of the Wild Things and becomes their king.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Ground Floor, Play Area</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 2 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1508873696983-2df5293cb395?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of Charlotte's Web" class="collection-book-cover">
+              <span class="collection-book-badge-category">Juvenile Fiction</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Charlotte's Web</h3>
+              <p class="collection-book-author">by E.B. White</p>
+              <div class="collection-book-meta">
+                <span>Call No: JUV-WHI-1952</span>
+                <span>192 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                A tender tale of friendship and devotion between Wilbur the piglet and Charlotte the wise grey barn
+                spider, who uses words woven into her web to save her friend's life.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Ground Floor, Junior Shelf 3</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 3 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80"
+                alt="Book cover of The Little Prince" class="collection-book-cover">
+              <span class="collection-book-badge-category">Fable & Children's</span>
+              <span class="collection-book-status-badge collection-status-available">Available</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">The Little Prince</h3>
+              <p class="collection-book-author">by Antoine de Saint-Exupéry</p>
+              <div class="collection-book-meta">
+                <span>Call No: JUV-SAI-1943</span>
+                <span>96 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                A stranded aviator meets a golden-haired boy from Asteroid B-612, discovering profound lessons on love,
+                innocence, friendship, and what is truly invisible to the eye.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Ground Floor, Junior Shelf 5</span>
+                <a href="services.html" class="btn btn-secondary collection-btn-sm">Reserve Copy</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. REFERENCE SECTION -->
+    <section id="collection-reference" class="collection-category-section section-bg-cream" aria-labelledby="collection-reference-title">
+      <div class="container">
+        <div class="collection-category-header-wrap">
+          <div class="collection-category-header-left">
+            <span class="collection-category-super-tag">Category 04</span>
+            <h2 id="collection-reference-title" class="collection-category-main-title">Reference</h2>
+            <p class="collection-category-lead-text">
+              Comprehensive encyclopedic treatises, lexical authorities, historical municipal maps, and scholarly
+              compendiums preserved for in-library research.
+            </p>
+          </div>
+          <span class="collection-category-count-badge">18,000+ Archival Volumes</span>
+        </div>
+
+        <div class="collection-books-grid">
+          <!-- Book 1 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80"
+                alt="Oxford English Dictionary volumes" class="collection-book-cover">
+              <span class="collection-book-badge-category">Lexicography</span>
+              <span class="collection-book-status-badge collection-status-reference">In-Library Only</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Oxford English Dictionary (20-Vol Set)</h3>
+              <p class="collection-book-author">by Oxford University Press</p>
+              <div class="collection-book-meta">
+                <span>Call No: REF-OUP-1989</span>
+                <span>21,728 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                The definitive record of the English language, tracing over 600,000 words across a millennium of
+                historical linguistic evolution with 3 million cited quotations.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 4, Desk Ref Bay 1</span>
+                <span style="font-size: 0.8125rem; font-weight: 600; color: #D84315;">Consult Desk Librarian</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 2 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80"
+                alt="Encyclopaedia Britannica historical atlas" class="collection-book-cover">
+              <span class="collection-book-badge-category">Atlas & Geography</span>
+              <span class="collection-book-status-badge collection-status-reference">In-Library Only</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">Encyclopaedia Britannica: World Heritage Atlas</h3>
+              <p class="collection-book-author">by Britannica Editorial Board</p>
+              <div class="collection-book-meta">
+                <span>Call No: REF-BRI-2018</span>
+                <span>850 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                High-resolution topographic maps, demographic migration tables, geopolitical border transformations, and
+                UNESCO protected cultural sites indexed with full-color plates.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 4, Map Room Cabinet 3</span>
+                <span style="font-size: 0.8125rem; font-weight: 600; color: #D84315;">Consult Desk Librarian</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 3 -->
+          <article class="collection-book-card">
+            <div class="collection-book-cover-wrap">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=80"
+                alt="Cambridge World History of Science volumes" class="collection-book-cover">
+              <span class="collection-book-badge-category">Academic Reference</span>
+              <span class="collection-book-status-badge collection-status-reference">In-Library Only</span>
+            </div>
+            <div class="collection-book-details">
+              <h3 class="collection-book-title">The Cambridge World History of Science</h3>
+              <p class="collection-book-author">by Cambridge University Press</p>
+              <div class="collection-book-meta">
+                <span>Call No: REF-CAM-2021</span>
+                <span>1,240 Pages</span>
+              </div>
+              <p class="collection-book-description">
+                An authoritative eight-part scholarly compendium charting the development of scientific thought,
+                experimental instruments, mathematics, and medicine across global societies.
+              </p>
+              <div class="collection-book-footer-action">
+                <span class="collection-shelf-info">Location: Floor 4, Bay 6D</span>
+                <span style="font-size: 0.8125rem; font-weight: 600; color: #D84315;">Consult Desk Librarian</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALLOUT SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="collection-callout">
+          <div>
+            <h3 class="collection-callout-title">Can't Find the Specific Volume You Need?</h3>
+            <p class="collection-callout-desc">
+              Our inter-library lending network connects Readers' Haven with over 50 regional academic and municipal
+              libraries. Speak to our reference desk to request titles or digital document scans.
+            </p>
+          </div>
+          <div class="collection-callout-actions">
+            <a href="services.html" class="btn btn-primary">Check Online Catalogue</a>
+            <a href="contact.html" class="btn btn-secondary">Ask a Librarian</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       SHARED FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Readers' Haven Public Library Home">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <path d="M9 7h6"></path>
+              <path d="M9 11h6"></path>
+              <path d="M9 15h4"></path>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name">Readers' Haven</span>
+              <span class="brand-tagline">Public Library</span>
+            </div>
+          </a>
+          <p class="footer-about">
+            A welcoming civic sanctuary dedicated to democratic access to literature, scholarly exploration, digital
+            literacy, and inclusive community connection.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Page</a></li>
+            <li><a href="collections.html" class="footer-link">Book Collections</a></li>
+            <li><a href="membership.html" class="footer-link">Membership Plans</a></li>
+            <li><a href="services.html" class="footer-link">Library Services</a></li>
+            <li><a href="events.html" class="footer-link">Events & Activities</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Visiting Hours</h4>
+          <ul class="footer-links">
+            <li class="footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Mon – Fri: 8:00 AM – 9:00
+              PM</li>
+            <li class="footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Saturday: 9:00 AM – 7:00 PM
+            </li>
+            <li class="footer-link" style="color: rgba(255,255,255,0.85); font-weight: 500;">Sunday: 10:00 AM – 6:00 PM
+            </li>
+            <li class="footer-link" style="color: var(--muted-gold); font-size: 0.8125rem; margin-top: 0.5rem;">Study
+              halls open 30 mins before general stacks.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>142 Heritage Boulevard, Cultural District, Lahore 54000</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>+92 (42) 3587-4190</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>info@readershavenlibrary.org</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Readers' Haven Public Library. All rights reserved. Dedicated to knowledge, community, and
+          literacy.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Borrowing</a>
+          <a href="contact.html">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
