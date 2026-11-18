@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Feedback - Readers' Haven</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<div class="contact-page-wrapper">
+  <!-- Header (Shared) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Readers' Haven</span>
+          <span class="brand-tagline">Public Library</span>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="collections.html" class="nav-link">Collections</a></li>
+          <li><a href="membership.html" class="nav-link">Membership</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-tag">Get in Touch</span>
+      <h1 class="page-hero-title">Contact & Feedback</h1>
+      <p class="page-hero-desc">We'd love to hear from you. Visit us, call us, or send us a message and we'll get back to you as soon as possible.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section section-bg-light">
+    <div class="container">
+      
+      <!-- Contact Info Cards -->
+      <div class="contact-cards-grid">
+        <div class="contact-info-card">
+          <div class="contact-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h3 class="contact-card-title">Our Location</h3>
+          <p class="contact-card-text">123 Library Road<br>Gulberg III, Lahore, Pakistan</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <h3 class="contact-card-title">Phone</h3>
+          <p class="contact-card-text"><strong>Main Desk:</strong><br>+92 42 1234 5678<br><strong>Support:</strong><br>+92 300 1234 567</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <h3 class="contact-card-title">Email</h3>
+          <p class="contact-card-text"><strong>General:</strong><br>info@readershaven.pk<br><strong>Events:</strong><br>events@readershaven.pk</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="contact-card-title">Opening Hours</h3>
+          <p class="contact-card-text">Mon–Sat: 9:00 AM – 9:00 PM<br>Sunday: 1:00 PM – 6:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Form and Map Grid -->
+      <div class="contact-main-grid">
+        
+        <!-- Form -->
+        <div class="form-wrapper">
+          <h2 class="form-title">Send Us a Message</h2>
+          <p class="form-subtitle">Fill out the form below and our team will get back to you within 24 hours.</p>
+          
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <select id="subject" name="subject" class="form-select">
+                <option value="general">General Inquiry</option>
+                <option value="membership">Membership Help</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-btn-submit">Submit Feedback</button>
+          </form>
+        </div>
+
+        <!-- Location Info -->
+        <div class="location-panel">
+          <div class="map-placeholder-box">
+            <span class="map-badge">Headquarters</span>
+            <div class="map-center-visual">
+              <svg class="map-center-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <h3 class="map-lead-address">Readers' Haven Library</h3>
+              <p class="map-sub-address">123 Library Road, Gulberg III</p>
+            </div>
+            <div class="map-details-grid">
+              <div class="map-detail-item">
+                <strong>Parking</strong>
+                Free on-site parking
+              </div>
+              <div class="map-detail-item">
+                <strong>Accessibility</strong>
+                Wheelchair ramp
+              </div>
+            </div>
+          </div>
+
+          <div class="transit-guide-card">
+            <h4 class="transit-title">Getting Here</h4>
+            <p class="transit-text">We are located just a 5-minute walk from the Gulberg Main Boulevard bus stop. Multiple metro lines and local buses serve the area.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Readers' Haven Public Library. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

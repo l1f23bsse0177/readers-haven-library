@@ -2,7 +2,7 @@
   "name": "readers-haven-library",
   "version": "1.0.0",
   "description": "A responsive static website for Readers' Haven Public Library, developed as part of the DevOps Fundamentals course assignment.",
-  "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build \"src/*.html\" --dist-dir dist"
